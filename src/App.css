@@ -1,38 +1,63 @@
 .App {
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  width: auto;
+  height: 50vh;
+  margin: 1% 10% 1% 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  margin: 5% 0 5% 0;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.story-container{
+  width: 50vw; 
+  height: auto;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas:
+  "image explanation"
+  "description explanation";
+  margin-right: auto;
+  margin-left: 10%;
+  padding: 1%; 
+  margin-bottom: 2%;
+}
+
+.image-container{
+  grid-area: image;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.description{
+  grid-area: description;
+  display: flex;
+  justify-content: left;
+  color: black;
+  font-weight: bold;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.explanation-container{
+  grid-area: explanation;
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  color: blue;
+  font-size: 1pt;
+  margin-left: 10%;
+  width: 40vw;
+  padding: 1%;
+}
+
+
+.explanation-container:hover{
+  background-color: cornsilk;
+  padding-top: 55%;
+  color: blueviolet;
+  font-size: larger;
 }
