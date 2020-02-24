@@ -37,14 +37,14 @@ let stories = [
     {
       id: 6,
       img: "6-shouldUpdate",
-      imgDesc: "There was some miscommunication with the HQ and they send two workers too many today. We won't need their help so we might as well not react to them at all.",
+      imgDesc: "There was some miscommunication with the HQ and they sent too many foam rolls today. We won't need them but we don't have any better solution for now so we might as well just ignore them altogether and go about our business as we planned.",
       lifecycle: "shouldComponentUpdate",
       lifecycleDesc: "shouldComponentUpdate checks the incoming props and state. In the method definition put a boolean expression that will help the component decide if it's time for a good rerender of it should chill and not jeopardize the app performance with its unnecessary actions."
     },
     {
       id: 7,
       img: "7-catch",
-      imgDesc: "Isn't it helpful to have someone watch out for you from a safe place and provide a fallback solutions if your action is about to fail?",
+      imgDesc: "Isn't it helpful to have someone watch out for you? Meet Bob, our safety manager. Bob always reacts before everything crashes.",
       lifecycle: "componentDidCatch",
       lifecycleDesc: "componentDidCatch is a miraculous solution for when your app is breaking because e.g. you're trying to map over something that's not an array. This lifecycle method will spot the error and instead of having the whole app crash, it will display a 'something went wrong' page"
     },
