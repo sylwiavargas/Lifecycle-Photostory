@@ -1,7 +1,6 @@
 body{
   margin: 1%;
   background-color: rgb(57, 49, 169);
-
 }
 
 .App {
@@ -9,7 +8,6 @@ body{
   box-shadow:0 6px 6px -6px #000;
   margin: 1%;
   background-color: white;
-
 }
 
 img{
@@ -90,4 +88,42 @@ h1{
 
 .explanation-container:hover p{
   padding-top: 10%;
+}
+
+
+.speech {
+  background-color:#fff;
+  border:solid 2px #000;
+  border-radius:12px;
+  display:inline-block;
+  margin:.5em;
+  padding:.5em 1em;
+  position:relative;
+  z-index: 2;
+}
+
+.speech:before {
+  border:solid 12px transparent;
+  border-left:solid 12px #000;
+  border-top:solid 12px #000;
+  bottom:-24px;
+  content:"";
+  height:0;
+  left:2px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
+}
+
+.speech:after {
+  border:solid 10px transparent;
+  border-left:solid 10px #fff;
+  border-top:solid 10px #fff;
+  bottom:-19px;
+  content:"";
+  height:0;
+  left:2px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
 }
