@@ -1,3 +1,7 @@
+body{
+  margin: 1%;
+}
+
 .App {
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -5,8 +9,7 @@
 
 img{
   width: auto;
-  height: 50vh;
-  margin: 1% 10% 1% 0;
+  height: 30vh;
 }
 
 h1{
@@ -23,7 +26,7 @@ h1{
   "image explanation"
   "description explanation";
   margin-right: auto;
-  margin-left: 10%;
+  margin-left: 3%;
   padding: 1%; 
   margin-bottom: 2%;
 }
@@ -39,25 +42,35 @@ h1{
   display: flex;
   justify-content: left;
   color: black;
-  font-weight: bold;  
+  font-weight: bold; 
+  padding: 0 5% 0 5%; 
 }
 
 .explanation-container{
   grid-area: explanation;
   display: flex;
   justify-content: center;
-  background-color: blue;
-  color: blue;
+  background-color: #FACC51;
+  color: #FACC51;
   font-size: 1pt;
   margin-left: 10%;
   width: 40vw;
   padding: 1%;
 }
 
+h2 {
+  color: #FACC51;
+  font-size: 200%;
+}
+
+.explanation-container p{
+  padding-top: 10%;
+}
 
 .explanation-container:hover{
-  background-color: cornsilk;
-  padding-top: 55%;
-  color: blueviolet;
-  font-size: larger;
+  background-color: #31A9A1;
+  padding-top: 35%;
+  color: rgb(247, 241, 236);
+  font-size: 100%;
+  padding: 25%;
 }

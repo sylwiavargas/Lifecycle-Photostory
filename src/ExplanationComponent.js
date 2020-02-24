@@ -6,7 +6,7 @@ export class ExplanationComponent extends Component {
         return (
             <div className="explanation-container"> 
                 <h2>{lifecycle}</h2>
-                <p><br/> <br/>{lifecycleDesc}</p>
+                <p>{lifecycleDesc}</p>
             </div>
         )
     }
