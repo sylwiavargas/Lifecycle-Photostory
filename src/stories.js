@@ -2,35 +2,35 @@ let stories = [
     {
       id: 1, 
       img: "1-planning",
-      imgDesc: "A developer company has closed a deal on a new building.",
+      imgDesc: "Hooray! Today at Lifecycle Buildings LLC we have closed a deal on a new building. The works will begin soon!",
       lifecycle: " ",
       lifecycleDesc: "Before the component comes to existence, it is first called by its parent. For instance, the MainContainer is called by App.js and you can see it in the return statement of render."
     }, 
     {
       id: 2, 
       img: "2-builders-plan",
-      imgDesc: "Before the work begins, the builders check out the blueprint to establish what tools, materials and crew they are getting already, the materials they need to order and what they are actually building.",
+      imgDesc: "Our builders check out the blueprint to establish what tools, materials and crew they are getting already, the materials they need to order and what they are actually building. Let's get to work!",
       lifecycle: "Constructor",
       lifecycleDesc: "Constructor fires up first. It evaluates the props (tools, materials and crew in the analogy), creates initial state (materials to be ordered) and binds functions to the class (this should sound familiar from the OOP JS lecture)."
     }, 
     {
       id: 3,
       img: "3-scaffolding",
-      imgDesc: "Now, it's time to set up the scaffolding and the structure of the building.",
+      imgDesc: "First, you lay down the foundations, build the structure and a scaffolding for yourself",
       lifecycle: "Render",
       lifecycleDesc: "Render evaluates state and props, and returns JSX which is then translated into a DOM node (element) and connects it to callback functions. Render needs to act like a pure function (every time needs to produce the same outcome), which means that you cannot insert setState there. If you do, you'll enter the infinite loop of rerenders because changes in state make the component re-render."
     },
     {
       id: 4,
       img: "4-mounted",
-      imgDesc: "The scaffolding has been finished, everyone is ready for action.",
+      imgDesc: "The scaffolding has been finished and everyone is joyfully waiting for action.",
       lifecycle: "componentDidMount",
       lifecycleDesc: "Now that your component is already sketched out, you can do whatever you want: go wild with fetching, setting the state, starting a timer, whatever you want. Your app won't crash because you have solid foundations and structure for this kind of a party!"
     },
     {
       id: 5,
       img: "6-shouldUpdate",
-      imgDesc: "There was some miscommunication with the HQ and they sent too many foam rolls today. We won't need them but we don't have any better solution for now so we might as well just ignore them altogether and go about our business as we planned.",
+      imgDesc: "Ooopsie! There was some miscommunication with the HQ and they sent too many foam rolls today. We won't need them but we don't have any better solution for now so we might as well just ignore them altogether and go about our business as we planned.",
       lifecycle: "shouldComponentUpdate",
       lifecycleDesc: "shouldComponentUpdate checks the incoming props and state. In the method definition put a boolean expression that will help the component decide if it's time for a good rerender of it should chill and not jeopardize the app performance with its unnecessary actions."
     },
