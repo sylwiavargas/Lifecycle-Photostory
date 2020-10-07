@@ -12,7 +12,9 @@ body{
 
 img{
   width: auto;
-  height: 30vh;
+  max-width: 95%;
+  height: 40vh;
+  max-height: 95%;
   box-shadow:6px 6px 6px -6px #000;
 }
 
@@ -61,13 +63,12 @@ h1{
 
 .explanation-container{
   grid-area: explanation;
-  display: flex;
   justify-content: center;
   background-color: #FACC51;
   color: #FACC51;
   font-size: 1pt;
   margin-left: 10%;
-  width: 40vw;
+  width: 45vw;
   padding: 1%;
 }
 
@@ -88,6 +89,8 @@ h1{
 
 .explanation-container:hover p{
   padding-top: 10%;
+  font-size: 125%;
+
 }
 
 
