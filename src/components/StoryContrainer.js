@@ -4,10 +4,10 @@ import ExplanationComponent from './ExplanationComponent.js'
 
 function StoryContrainer({story: {img, imgDesc, lifecycle, lifecycleDesc}}) {
     return (
-        <section className="story-container">
+        <div className="story-container">
             <ImageComponent img={img} imgDesc={imgDesc}/>
             <ExplanationComponent lifecycle={lifecycle} lifecycleDesc={lifecycleDesc}/>
-        </section>
+        </div>
     )
 }
 

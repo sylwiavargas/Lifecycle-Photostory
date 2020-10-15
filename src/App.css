@@ -7,16 +7,17 @@
   --expl-bg: #31A9A1;
   --hidden-bg: #FACC51;
   --shadow: 0 6px 6px -6px black;
+  --border: solid 2px black;
 }
 
 body{
   margin: 1%;
   background-color: var(--app-bg);
-  font-family: 'Open Sans',serif;
+  font-family: 'Open Sans', serif;
 }
 
 .App{
-  border: solid 2px black;
+  border: var(--border);
   margin: 1%;
   background-color: white;
   box-shadow: var(--shadow)
@@ -38,17 +39,11 @@ figcaption{
 h1{
   margin: 5% 1% 5% 1%;
   text-align: center;
-  border: solid 2px black;
+  border: var(--border);
   padding: 1%;
   box-shadow: var(--shadow);
   font-family: 'Acme', sans-serif;
   font-size: 300%;
-  letter-spacing: 3px;
-}
-
-h2{
-  font-family: 'Acme', sans-serif;
-  font-size: 500%;
   letter-spacing: 3px;
 }
 
@@ -70,8 +65,7 @@ h2{
   grid-area: image;
   display: block;
   text-align: center;
-  display: block;
-  border:solid 2px black;
+  border:var(--border);
   box-shadow: var(--shadow)
 }
 
@@ -82,7 +76,7 @@ h2{
   color: black;
   font-weight: bold; 
   padding: 5%; 
-  border: solid 2px black;
+  border: var(--border);
   box-shadow: var(--shadow)
 }
 
@@ -105,7 +99,9 @@ h2{
 
 .explanation-container:hover h2{
   color: var(--hidden-bg);
-  font-size: 200%;
+  font-family: 'Acme', sans-serif;
+  letter-spacing: 3px;
+  font-size: calc(1.5vw + 1.5vh);
   text-shadow: 2px 2px black;
 }
 
@@ -114,9 +110,9 @@ h2{
   font-size: 125%;
 }
 
-.speech {
-  background-color :white;
-  border: solid 2px black;
+.speech{
+  background-color: white;
+  border: var(--border);
   border-radius: 12px;
   display: inline-block;
   margin: .5em;
